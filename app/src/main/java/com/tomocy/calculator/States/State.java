@@ -1,4 +1,4 @@
-package com.tomocy.calculator;
+package com.tomocy.calculator.States;
 
 public interface State {
 
