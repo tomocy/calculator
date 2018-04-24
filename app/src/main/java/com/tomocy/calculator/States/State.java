@@ -1,14 +1,16 @@
 package com.tomocy.calculator.States;
 
+import com.tomocy.calculator.Context;
+
 public interface State {
 
-    void onInputNumber();
+    void onInputNumber(Context ctx, Number num);
 
-    void onInputOperation();
+    void onInputOperation(Context ctx);
 
-    void onInputEqual();
+    void onInputEqual(Context ctx);
 
-    void onInputClaer();
+    void onInputClaer(Context ctx);
 
     void onInputAllClear();
 
