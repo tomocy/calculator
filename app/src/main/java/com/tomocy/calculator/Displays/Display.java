@@ -2,6 +2,6 @@ package com.tomocy.calculator.Displays;
 
 public interface Display {
 
-    void show(Number num);
+    void show(String str);
 
 }
