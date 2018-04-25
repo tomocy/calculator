@@ -3,7 +3,7 @@ package com.tomocy.calculator.States;
 import com.tomocy.calculator.Context;
 import com.tomocy.calculator.Operation;
 
-class NumberAState implements State {
+public class NumberAState implements State {
 
     private NumberAState() {}
 
