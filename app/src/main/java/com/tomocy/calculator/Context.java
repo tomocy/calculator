@@ -1,13 +1,11 @@
 package com.tomocy.calculator;
 
+import com.tomocy.calculator.Displays.Display;
+
 public interface Context {
 
-    void clear();
+    void setDisp(Display disp);
 
     void showNum(Number num);
-
-    void saveNum();
-
-    void setOp(Operation op);
 
 }
