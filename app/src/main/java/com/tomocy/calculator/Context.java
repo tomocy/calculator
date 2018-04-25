@@ -8,4 +8,5 @@ public interface Context {
 
     void showNum(Number num);
 
+    void onInputOperation(Operation op);
 }

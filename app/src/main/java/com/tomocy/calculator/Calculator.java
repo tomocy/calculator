@@ -1,5 +1,6 @@
 package com.tomocy.calculator;
 
+import android.util.Log;
 import android.widget.TextView;
 
 import com.tomocy.calculator.Displays.Display;
@@ -35,5 +36,10 @@ public class Calculator implements Context {
     @Override
     public void showNum(Number num) {
         this.disp.show(num.toString());
+    }
+
+    @Override
+    public void onInputOperation(Operation op) {
+        Log.d("onInputOperation", "aiueo");
     }
 }
