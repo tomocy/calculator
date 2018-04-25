@@ -1,6 +1,7 @@
 package com.tomocy.calculator.States;
 
 import com.tomocy.calculator.Context;
+import com.tomocy.calculator.Number;
 import com.tomocy.calculator.Operation;
 
 public interface State {
