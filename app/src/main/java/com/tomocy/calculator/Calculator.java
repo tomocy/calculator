@@ -64,4 +64,9 @@ public class Calculator implements Context {
     public void setState(State state) {
         this.state = state;
     }
+
+    @Override
+    public void clear() {
+        this.disp.clear();
+    }
 }
