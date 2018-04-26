@@ -15,7 +15,8 @@ public class NumberBState implements State {
 
     @Override
     public void onInputNumber(Context ctx, Number num) {
-
+        ctx.add(num);
+        ctx.show();
     }
 
     @Override
