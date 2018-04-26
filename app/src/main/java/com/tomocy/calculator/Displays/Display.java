@@ -12,4 +12,5 @@ public interface Display {
 
     Double getAsDouble();
 
+    void clear();
 }
