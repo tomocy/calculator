@@ -28,11 +28,35 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButton(View view) {
         switch (view.getId()) {
+            case R.id.num0Btn:
+                this.calc.onInputNumber(Number.ZERO);
+                break;
+            case R.id.num1Btn:
+                this.calc.onInputNumber(Number.ONE);
+                break;
+            case R.id.num2Btn:
+                this.calc.onInputNumber(Number.TWO);
+                break;
+            case R.id.num3Btn:
+                this.calc.onInputNumber(Number.THREE);
+                break;
+            case R.id.num4Btn:
+                this.calc.onInputNumber(Number.FOUR);
+                break;
+            case R.id.num5Btn:
+                this.calc.onInputNumber(Number.FIVE);
+                break;
+            case R.id.num6Btn:
+                this.calc.onInputNumber(Number.SIX);
+                break;
             case R.id.num7Btn:
                 this.calc.onInputNumber(Number.SEVEN);
                 break;
             case R.id.num8Btn:
                 this.calc.onInputNumber(Number.EIGHT);
+                break;
+            case R.id.num9Btn:
+                this.calc.onInputNumber(Number.NINE);
                 break;
             case R.id.opDivideBtn:
                 this.calc.onInputOperation(Operation.DIVIDE);
