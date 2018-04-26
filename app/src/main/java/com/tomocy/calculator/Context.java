@@ -21,4 +21,6 @@ public interface Context {
     void setOp(Operation op);
 
     void setState(State state);
+
+    void clear();
 }
