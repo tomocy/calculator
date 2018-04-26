@@ -17,7 +17,8 @@ public class NumberAState implements State {
 
     @Override
     public void onInputNumber(Context ctx, Number num) {
-        ctx.showNum(num);
+        ctx.add(num);
+        ctx.show();
     }
 
     @Override
