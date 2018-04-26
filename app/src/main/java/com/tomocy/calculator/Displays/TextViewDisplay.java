@@ -46,4 +46,8 @@ public class TextViewDisplay extends DisplayAbstract implements Display {
         }
     }
 
+    @Override
+    public void clear() {
+        this.stack.clear();
+    }
 }
