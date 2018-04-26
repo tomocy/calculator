@@ -35,12 +35,16 @@ public class MainActivity extends AppCompatActivity {
                 this.calc.showNum(Number.EIGHT);
             case R.id.opDivideBtn:
                 this.calc.onInputOperation(Operation.DIVIDE);
+                break;
             case R.id.opTimesBtn:
                 this.calc.onInputOperation(Operation.TIMES);
+                break;
             case R.id.opMinusBtn:
                 this.calc.onInputOperation(Operation.MINUS);
+                break;
             case R.id.opPlusBtn:
                 this.calc.onInputOperation(Operation.PLUS);
+                break;
             default:
                 Log.d("onClickButton", "Default");
         }
