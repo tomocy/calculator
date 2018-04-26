@@ -2,6 +2,7 @@ package com.tomocy.calculator;
 
 import com.tomocy.calculator.Displays.Display;
 import com.tomocy.calculator.States.State;
+import com.tomocy.calculator.Number;
 
 public interface Context {
 
@@ -11,7 +12,9 @@ public interface Context {
 
     void setDisp(Display disp);
 
-    void showNum(Number num);
+    void show();
+
+    void add(Number num);
 
     void saveNumA();
 
