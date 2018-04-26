@@ -61,6 +61,7 @@
                     android:id="@+id/num9Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="9" />
 
                 <Button
@@ -80,18 +81,21 @@
                     android:id="@+id/num4Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="4" />
 
                 <Button
                     android:id="@+id/num5Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="5" />
 
                 <Button
                     android:id="@+id/num6Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="6" />
 
                 <Button
@@ -111,18 +115,21 @@
                     android:id="@+id/num1Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="1" />
 
                 <Button
                     android:id="@+id/num2Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="2" />
 
                 <Button
                     android:id="@+id/num3Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="3" />
 
                 <Button
@@ -142,6 +149,7 @@
                     android:id="@+id/num0Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
                     android:text="0" />
 
                 <Button
@@ -151,10 +159,11 @@
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button15"
+                    android:id="@+id/equalBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:onClick="onClickButton"
+                    android:text="=" />
 
                 <Button
                     android:id="@+id/opPlusBtn"
