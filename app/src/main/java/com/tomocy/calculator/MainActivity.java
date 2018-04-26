@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.num8Btn:
                 this.calc.showNum(Number.EIGHT);
+                break;
             case R.id.opDivideBtn:
                 this.calc.onInputOperation(Operation.DIVIDE);
                 break;
