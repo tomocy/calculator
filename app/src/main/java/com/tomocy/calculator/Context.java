@@ -4,9 +4,13 @@ import com.tomocy.calculator.Displays.Display;
 
 public interface Context {
 
+    void onInputOperation(Operation op);
+
     void setDisp(Display disp);
 
     void showNum(Number num);
 
-    void onInputOperation(Operation op);
+    void saveNumA();
+
+    void setOp(Operation op);
 }
