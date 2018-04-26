@@ -1,6 +1,7 @@
 package com.tomocy.calculator.Displays;
 
 import android.widget.TextView;
+import com.tomocy.calculator.Number;
 
 public class TextViewDisplay extends DisplayAbstract implements Display {
 
@@ -11,8 +12,12 @@ public class TextViewDisplay extends DisplayAbstract implements Display {
     }
 
     @Override
-    public void add(String str) {
-        this.stack.add(str);
+    public void add(Number num) {
+        if (this.stack.size() == 0 && num == Number.ZERO) {
+            return;
+        }
+
+        this.stack.add(num.toString());
     }
 
     @Override
