@@ -50,4 +50,9 @@ public class Calculator implements Context {
     public void setOp(Operation op) {
         this.op = op;
     }
+
+    @Override
+    public void setState(State state) {
+        this.state = state;
+    }
 }
