@@ -25,6 +25,11 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void onInputNumber(Number num) {
+        this.state.onInputNumber(this, num);
+    }
+
+    @Override
     public void onInputOperation(Operation op) {
         this.setOp(op);
         this.state.onInputOperation(this);
