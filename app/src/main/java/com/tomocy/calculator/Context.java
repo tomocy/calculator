@@ -5,6 +5,8 @@ import com.tomocy.calculator.States.State;
 
 public interface Context {
 
+    void onInputNumber(Number num);
+
     void onInputOperation(Operation op);
 
     void setDisp(Display disp);
