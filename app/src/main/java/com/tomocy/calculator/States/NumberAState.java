@@ -17,6 +17,7 @@ public class NumberAState implements State {
     @Override
     public void onInputOperation(Context ctx) {
         ctx.saveNumA();
+        ctx.setState(OperationState.getInstance());
     }
 
 }
