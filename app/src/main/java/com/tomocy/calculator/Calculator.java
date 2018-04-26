@@ -1,10 +1,6 @@
 package com.tomocy.calculator;
 
-import android.util.Log;
-import android.widget.TextView;
-
 import com.tomocy.calculator.Displays.Display;
-import com.tomocy.calculator.Displays.TextViewDisplay;
 import com.tomocy.calculator.States.State;
 import com.tomocy.calculator.States.NumberAState;
 
@@ -29,17 +25,29 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void onInputOperation(Operation op) {
+        this.setOp(op);
+        this.state.onInputOperation(this);
+    }
+
+    @Override
     public void setDisp(Display disp) {
         this.disp = disp;
     }
 
     @Override
     public void showNum(Number num) {
-        this.disp.show(num.toString());
+        this.disp.add(num.toString());
+        this.disp.show();
     }
 
     @Override
-    public void onInputOperation(Operation op) {
-        Log.d("onInputOperation", "aiueo");
+    public void saveNumA() {
+        this.a = this.disp.getAsDouble();
+    }
+
+    @Override
+    public void setOp(Operation op) {
+        this.op = op;
     }
 }
