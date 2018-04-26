@@ -1,6 +1,7 @@
 package com.tomocy.calculator;
 
 import com.tomocy.calculator.Displays.Display;
+import com.tomocy.calculator.States.State;
 
 public interface Context {
 
@@ -13,4 +14,6 @@ public interface Context {
     void saveNumA();
 
     void setOp(Operation op);
+
+    void setState(State state);
 }
