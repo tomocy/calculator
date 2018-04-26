@@ -41,9 +41,13 @@ public class Calculator implements Context {
     }
 
     @Override
-    public void showNum(Number num) {
-        this.disp.add(num.toString());
+    public void show() {
         this.disp.show();
+    }
+
+    @Override
+    public void add(Number num) {
+        this.disp.add(num);
     }
 
     @Override
