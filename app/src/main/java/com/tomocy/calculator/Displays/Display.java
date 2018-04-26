@@ -2,6 +2,12 @@ package com.tomocy.calculator.Displays;
 
 public interface Display {
 
-    void show(String str);
+    void add(String str);
+
+    void show();
+
+    String get();
+
+    Double getAsDouble();
 
 }
