@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     public void onClickButton(View view) {
         switch (view.getId()) {
             case R.id.num7Btn:
-                this.calc.showNum(Number.SEVEN);
+                this.calc.onInputNumber(Number.SEVEN);
                 break;
             case R.id.num8Btn:
-                this.calc.showNum(Number.EIGHT);
+                this.calc.onInputNumber(Number.EIGHT);
                 break;
             case R.id.opDivideBtn:
                 this.calc.onInputOperation(Operation.DIVIDE);
