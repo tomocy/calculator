@@ -4,6 +4,15 @@ import com.tomocy.calculator.Context;
 import com.tomocy.calculator.Number;
 
 public class ResultState implements State {
+
+    private ResultState() {}
+
+    public static ResultState getInstance() { return ResultStateHolder.INSTANCE; }
+
+    private static class ResultStateHolder {
+        private static final ResultState INSTANCE = new ResultState();
+    }
+
     @Override
     public void onInputNumber(Context ctx, Number num) {
 
