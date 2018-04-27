@@ -26,6 +26,8 @@ public interface Context {
 
     void saveNumA();
 
+    void setNumA(Double d);
+
     void saveNumB();
 
     void setOp(Operation op);

@@ -66,9 +66,10 @@ public class Calculator implements Context {
     }
 
     @Override
-    public void saveNumB() {
-        this.b = this.disp.getAsDouble();
-    }
+    public void setNumA(Double d) { this.a = d; }
+
+    @Override
+    public void saveNumB() { this.b = this.disp.getAsDouble(); }
 
     @Override
     public Double eval() {
