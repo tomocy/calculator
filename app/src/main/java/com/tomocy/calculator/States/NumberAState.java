@@ -32,4 +32,9 @@ public class NumberAState implements State {
 
     }
 
+    @Override
+    public void onInputClear(Context ctx) {
+        ctx.clearA();
+        ctx.clearDisp();
+    }
 }

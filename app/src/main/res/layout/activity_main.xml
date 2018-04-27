@@ -153,10 +153,11 @@
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/button14"
+                    android:id="@+id/clearBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:onClick="onClickButton"
+                    android:text="C" />
 
                 <Button
                     android:id="@+id/equalBtn"

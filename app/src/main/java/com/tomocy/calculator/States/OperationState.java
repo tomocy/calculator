@@ -31,4 +31,11 @@ public class OperationState implements State {
     public void onInputEqual(Context ctx) {
 
     }
+
+    @Override
+    public void onInputClear(Context ctx) {
+        ctx.clearA();
+        ctx.clearDisp();
+        ctx.setState(NumberAState.getInstance());
+    }
 }

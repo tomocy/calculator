@@ -33,4 +33,10 @@ public class NumberBState implements State {
 
         ctx.setState(ResultState.getInstance());
     }
+
+    @Override
+    public void onInputClear(Context ctx) {
+        ctx.clearB();
+        ctx.clearDisp();
+    }
 }

@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.equalBtn:
                 this.calc.onInputEqual();
                 break;
+            case R.id.clearBtn:
+                this.calc.onInputClear();
+                break;
             default:
                 Log.d("onClickButton", "Default");
         }

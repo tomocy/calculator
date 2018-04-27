@@ -11,4 +11,6 @@ public interface State {
 
     void onInputEqual(Context ctx);
 
+    void onInputClear(Context ctx);
+
 }

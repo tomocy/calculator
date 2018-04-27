@@ -30,4 +30,11 @@ public class ResultState implements State {
     public void onInputEqual(Context ctx) {
 
     }
+
+    @Override
+    public void onInputClear(Context ctx) {
+        ctx.clear();
+        ctx.clearDisp();
+        ctx.setState(NumberAState.getInstance());
+    }
 }

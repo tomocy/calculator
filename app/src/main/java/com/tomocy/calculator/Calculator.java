@@ -41,6 +41,9 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void onInputClear() { this.state.onInputClear(this); }
+
+    @Override
     public void setDisp(Display disp) {
         this.disp = disp;
     }
@@ -88,5 +91,21 @@ public class Calculator implements Context {
     @Override
     public void clear() {
         this.disp.clear();
+    }
+
+    @Override
+    public void clearA() {
+        this.a = 0.0;
+    }
+
+    @Override
+    public void clearB() {
+        this.b = 0.0;
+    }
+
+    @Override
+    public void clearDisp() {
+        this.disp.clear();
+        this.disp.show();
     }
 }

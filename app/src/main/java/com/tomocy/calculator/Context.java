@@ -12,6 +12,8 @@ public interface Context {
 
     void onInputEqual();
 
+    void onInputClear();
+
     void setDisp(Display disp);
 
     void show();
@@ -31,4 +33,10 @@ public interface Context {
     void setState(State state);
 
     void clear();
+
+    void clearA();
+
+    void clearB();
+
+    void clearDisp();
 }
