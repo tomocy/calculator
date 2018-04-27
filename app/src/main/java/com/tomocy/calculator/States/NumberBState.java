@@ -23,4 +23,12 @@ public class NumberBState implements State {
     public void onInputOperation(Context ctx) {
 
     }
+
+    @Override
+    public void onInputEqual(Context ctx) {
+        ctx.saveNumB();
+        ctx.clear();
+        Double res = ctx.eval();
+        ctx.show(res);
+    }
 }

@@ -8,6 +8,8 @@ public interface Display {
 
     void show();
 
+    void show(Double d);
+
     String get();
 
     Double getAsDouble();

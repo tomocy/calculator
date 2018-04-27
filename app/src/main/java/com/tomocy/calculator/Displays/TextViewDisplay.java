@@ -27,6 +27,12 @@ public class TextViewDisplay extends DisplayAbstract implements Display {
     }
 
     @Override
+    public void show(Double d) {
+        String str = Double.toString(d);
+        this.disp.setText(str);
+    }
+
+    @Override
     public String get() {
         StringBuffer strBuf = new StringBuffer();
         for (String str: this.stack) {

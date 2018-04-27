@@ -26,4 +26,9 @@ public class OperationState implements State {
     @Override
     public void onInputOperation(Context ctx) {
     }
+
+    @Override
+    public void onInputEqual(Context ctx) {
+
+    }
 }

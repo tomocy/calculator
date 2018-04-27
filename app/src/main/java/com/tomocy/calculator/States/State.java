@@ -9,4 +9,6 @@ public interface State {
 
     void onInputOperation(Context ctx);
 
+    void onInputEqual(Context ctx);
+
 }

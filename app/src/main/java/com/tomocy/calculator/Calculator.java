@@ -36,6 +36,11 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void onInputEqual() {
+        this.state.onInputEqual(this);
+    }
+
+    @Override
     public void setDisp(Display disp) {
         this.disp = disp;
     }
@@ -46,6 +51,11 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void show(Double d) {
+        this.disp.show(d);
+    }
+
+    @Override
     public void add(Number num) {
         this.disp.add(num);
     }
@@ -53,6 +63,16 @@ public class Calculator implements Context {
     @Override
     public void saveNumA() {
         this.a = this.disp.getAsDouble();
+    }
+
+    @Override
+    public void saveNumB() {
+        this.b = this.disp.getAsDouble();
+    }
+
+    @Override
+    public Double eval() {
+        return this.op.eval(this.a, this.b);
     }
 
     @Override

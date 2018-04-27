@@ -10,13 +10,21 @@ public interface Context {
 
     void onInputOperation(Operation op);
 
+    void onInputEqual();
+
     void setDisp(Display disp);
 
     void show();
 
+    void show(Double d);
+
     void add(Number num);
 
+    Double eval();
+
     void saveNumA();
+
+    void saveNumB();
 
     void setOp(Operation op);
 

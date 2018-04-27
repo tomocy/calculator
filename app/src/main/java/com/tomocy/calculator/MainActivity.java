@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.opPlusBtn:
                 this.calc.onInputOperation(Operation.PLUS);
                 break;
+            case R.id.equalBtn:
+                this.calc.onInputEqual();
+                break;
             default:
                 Log.d("onClickButton", "Default");
         }

@@ -27,4 +27,9 @@ public class NumberAState implements State {
         ctx.setState(OperationState.getInstance());
     }
 
+    @Override
+    public void onInputEqual(Context ctx) {
+
+    }
+
 }
