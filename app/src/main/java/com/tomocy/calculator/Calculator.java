@@ -30,10 +30,7 @@ public class Calculator implements Context {
     }
 
     @Override
-    public void onInputOperation(Operation op) {
-        this.setOp(op);
-        this.state.onInputOperation(this);
-    }
+    public void onInputOperation(Operation op) { this.state.onInputOperation(this, op); }
 
     @Override
     public void onInputEqual() {

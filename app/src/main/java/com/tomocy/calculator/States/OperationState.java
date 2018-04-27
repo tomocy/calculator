@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.tomocy.calculator.Context;
 import com.tomocy.calculator.Number;
+import com.tomocy.calculator.Operation;
 
 public class OperationState implements State {
 
@@ -24,7 +25,7 @@ public class OperationState implements State {
     }
 
     @Override
-    public void onInputOperation(Context ctx) {
+    public void onInputOperation(Context ctx, Operation op) {
     }
 
     @Override
