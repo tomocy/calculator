@@ -31,7 +31,7 @@ public class NumberAState implements State {
 
     @Override
     public void onInputEqual(Context ctx) {
-
+        ctx.setState(ResultState.getInstance());
     }
 
     @Override
