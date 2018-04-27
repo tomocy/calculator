@@ -22,6 +22,8 @@ public interface Context {
 
     void add(Number num);
 
+    void add(Double d);
+
     Double eval();
 
     void saveNumA();
@@ -41,4 +43,6 @@ public interface Context {
     void clearB();
 
     void clearDisp();
+
+    Double getNumA();
 }

@@ -61,6 +61,9 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void add(Double d) { this.disp.add(d); }
+
+    @Override
     public void saveNumA() {
         this.a = this.disp.getAsDouble();
     }
@@ -105,5 +108,9 @@ public class Calculator implements Context {
     public void clearDisp() {
         this.disp.clear();
         this.disp.show();
+    }
+
+    public Double getNumA() {
+        return this.a;
     }
 }

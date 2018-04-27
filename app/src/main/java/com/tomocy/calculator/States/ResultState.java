@@ -1,5 +1,7 @@
 package com.tomocy.calculator.States;
 
+import android.util.Log;
+
 import com.tomocy.calculator.Context;
 import com.tomocy.calculator.Number;
 import com.tomocy.calculator.Operation;
@@ -24,12 +26,14 @@ public class ResultState implements State {
 
     @Override
     public void onInputOperation(Context ctx, Operation op) {
-
+        ctx.saveNumA();
+        ctx.setOp(op);
+        ctx.setState(OperationState.getInstance());
     }
 
     @Override
     public void onInputEqual(Context ctx) {
-
+        // do nothing
     }
 
     @Override

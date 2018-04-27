@@ -21,6 +21,15 @@ public class TextViewDisplay extends DisplayAbstract implements Display {
     }
 
     @Override
+    public void add(Double d) {
+        if (this.stack.size() == 0 && d == 0.0) {
+            return;
+        }
+
+        this.stack.add(Double.toString(d));
+    }
+
+    @Override
     public void show() {
         String str = this.get();
         this.disp.setText(str);

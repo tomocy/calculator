@@ -6,6 +6,8 @@ public interface Display {
 
     void add(Number num);
 
+    void add(Double d);
+
     void show();
 
     void show(Double d);

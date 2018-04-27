@@ -25,20 +25,28 @@ public class NumberBState implements State {
     @Override
     public void onInputOperation(Context ctx, Operation op) {
         ctx.saveNumB();
+
         Double res = ctx.eval();
-        Log.d("[aiuoe]", Double.toString(res));
-        ctx.show(res);
+
+        ctx.clear();
+        ctx.add(res);
+        ctx.show();
+
         ctx.setNumA(res);
         ctx.setOp(op);
+
         ctx.setState(OperationState.getInstance());
     }
 
     @Override
     public void onInputEqual(Context ctx) {
         ctx.saveNumB();
-        ctx.clear();
+
         Double res = ctx.eval();
-        ctx.show(res);
+
+        ctx.clear();
+        ctx.add(res);
+        ctx.show();
 
         ctx.setState(ResultState.getInstance());
     }
