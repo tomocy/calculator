@@ -30,5 +30,7 @@ public class NumberBState implements State {
         ctx.clear();
         Double res = ctx.eval();
         ctx.show(res);
+
+        ctx.setState(ResultState.getInstance());
     }
 }

@@ -15,7 +15,10 @@ public class ResultState implements State {
 
     @Override
     public void onInputNumber(Context ctx, Number num) {
-
+        ctx.clear();
+        ctx.add(num);
+        ctx.show();
+        ctx.setState(NumberAState.getInstance());
     }
 
     @Override
