@@ -31,8 +31,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.632">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -153,11 +155,11 @@
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/clearBtn"
+                    android:id="@+id/commaBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onClickButton"
-                    android:text="C" />
+                    android:text="." />
 
                 <Button
                     android:id="@+id/equalBtn"
@@ -172,6 +174,40 @@
                     android:layout_height="wrap_content"
                     android:onClick="onClickButton"
                     android:text="+" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/clearBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickButton"
+                    android:text="C" />
             </TableRow>
 
         </TableLayout>
