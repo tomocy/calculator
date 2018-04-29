@@ -50,6 +50,11 @@ public class NumberBState implements State {
     }
 
     @Override
+    public void onInputComma(Context ctx) {
+
+    }
+
+    @Override
     public void onInputClear(Context ctx) {
         ctx.clearB();
         ctx.resetDisp();

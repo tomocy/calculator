@@ -12,6 +12,8 @@ public interface Context {
 
     void onInputEqual();
 
+    void onInputComma();
+
     void onInputClear();
 
     void setDisp(Display disp);

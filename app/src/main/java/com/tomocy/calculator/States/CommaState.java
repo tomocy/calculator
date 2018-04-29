@@ -30,6 +30,11 @@ public class CommaState implements State {
     }
 
     @Override
+    public void onInputComma(Context ctx) {
+
+    }
+
+    @Override
     public void onInputClear(Context ctx) {
 
     }

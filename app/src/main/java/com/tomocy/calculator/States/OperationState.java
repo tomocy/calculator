@@ -33,6 +33,11 @@ public class OperationState implements State {
     }
 
     @Override
+    public void onInputComma(Context ctx) {
+
+    }
+
+    @Override
     public void onInputClear(Context ctx) {
         ctx.clearOp();
         ctx.setState(NumberAState.getInstance());

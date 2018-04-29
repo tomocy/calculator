@@ -12,6 +12,8 @@ public interface State {
 
     void onInputEqual(Context ctx);
 
+    void onInputComma(Context ctx);
+
     void onInputClear(Context ctx);
 
 }

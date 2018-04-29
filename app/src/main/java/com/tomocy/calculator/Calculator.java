@@ -38,6 +38,9 @@ public class Calculator implements Context {
     }
 
     @Override
+    public void onInputComma() { this.state.onInputComma(this); }
+
+    @Override
     public void onInputClear() { this.state.onInputClear(this); }
 
     @Override
