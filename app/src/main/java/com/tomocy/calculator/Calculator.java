@@ -105,4 +105,10 @@ public class Calculator implements Context {
     @Override
     public void clearOp() { this.op = null; }
 
+    @Override
+    public void resetDisp() {
+        this.clear();
+        this.add(Number.ZERO);
+        this.show();
+    }
 }

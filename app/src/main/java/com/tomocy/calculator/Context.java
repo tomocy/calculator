@@ -43,4 +43,6 @@ public interface Context {
     void clearB();
 
     void clearOp();
+
+    void resetDisp();
 }

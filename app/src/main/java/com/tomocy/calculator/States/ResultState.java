@@ -38,8 +38,7 @@ public class ResultState implements State {
     public void onInputClear(Context ctx) {
         ctx.clearA();
         ctx.clearB();
-        ctx.clear();
-        ctx.show();
+        ctx.resetDisp();
         ctx.setState(NumberAState.getInstance());
     }
 }

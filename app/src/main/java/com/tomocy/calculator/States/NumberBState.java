@@ -52,7 +52,6 @@ public class NumberBState implements State {
     @Override
     public void onInputClear(Context ctx) {
         ctx.clearB();
-        ctx.clear();
-        ctx.show();
+        ctx.resetDisp();
     }
 }

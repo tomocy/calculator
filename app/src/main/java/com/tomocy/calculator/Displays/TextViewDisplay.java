@@ -13,18 +13,18 @@ public class TextViewDisplay extends DisplayAbstract implements Display {
 
     @Override
     public void add(Number num) {
-        if (this.stack.size() == 0 && num == Number.ZERO) {
-            return;
-        }
+//        if (this.stack.size() == 0 && num == Number.ZERO) {
+//            return;
+//        }
 
         this.stack.add(num.toString());
     }
 
     @Override
     public void add(Double d) {
-        if (this.stack.size() == 0 && d == 0.0) {
-            return;
-        }
+//        if (this.stack.size() == 0 && d == 0.0) {
+//            return;
+//        }
 
         this.stack.add(Double.toString(d));
     }
