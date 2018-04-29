@@ -90,9 +90,7 @@ public class Calculator implements Context {
     }
 
     @Override
-    public void clear() {
-        this.disp.clear();
-    }
+    public void clear() { this.disp.clear(); }
 
     @Override
     public void clearA() {
@@ -105,12 +103,6 @@ public class Calculator implements Context {
     }
 
     @Override
-    public void clearDisp() {
-        this.disp.clear();
-        this.disp.show();
-    }
+    public void clearOp() { this.op = null; }
 
-    public Double getNumA() {
-        return this.a;
-    }
 }

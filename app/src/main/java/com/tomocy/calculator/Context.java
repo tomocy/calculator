@@ -42,7 +42,5 @@ public interface Context {
 
     void clearB();
 
-    void clearDisp();
-
-    Double getNumA();
+    void clearOp();
 }
